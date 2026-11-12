@@ -3,19 +3,72 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard CAIS</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Dashboard Akademik CAIS</h1>
+    <div class="dashboard-shell">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Sistem Informasi Akademik</p>
+                <h1>Dashboard Akademik CAIS</h1>
+            </div>
+            <nav class="main-nav" aria-label="Navigasi utama">
+                <a href="login.html">Login</a>
+                <a href="mahasiswa.html">Mahasiswa</a>
+            </nav>
+        </header>
 
-    <h2>Ringkasan Akademik</h2>
+        <main>
+            <section class="hero">
+                <div>
+                    <p class="eyebrow">Ringkasan</p>
+                    <h2>Selamat datang di dashboard</h2>
+                </div>
+                <button class="primary-btn">Unduh Laporan</button>
+            </section>
 
-    <p>Total Mahasiswa: 120</p>
-    <p>Total Program Studi: 5</p>
-    <p>Semester Aktif: Ganjil</p>
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <span>Total Mahasiswa</span>
+                    <strong>120</strong>
+                    <small>+8% dari bulan lalu</small>
+                </article>
+                <article class="stat-card">
+                    <span>Total Program Studi</span>
+                    <strong>5</strong>
+                    <small>2 akademik, 3 profesi</small>
+                </article>
+                <article class="stat-card">
+                    <span>Semester Aktif</span>
+                    <strong>Ganjil</strong>
+                    <small>2026/2027</small>
+                </article>
+            </section>
 
-    <nav>
-        <a href="login.html">Login</a>
-    </nav>
+            <section class="content-grid">
+                <div class="panel">
+                    <h3>Aktivitas Terbaru</h3>
+                    <ul class="activity-list">
+                        <li>Pengumuman jadwal ujian semester disetujui.</li>
+                        <li>Data mahasiswa baru berhasil diverifikasi.</li>
+                        <li>Proses registrasi matakuliah dibuka.</li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <h3>Statistik</h3>
+                    <div class="mini-chart">
+                        <div class="bar" style="height: 55%"></div>
+                        <div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 88%"></div>
+                        <div class="bar" style="height: 62%"></div>
+                        <div class="bar" style="height: 90%"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
